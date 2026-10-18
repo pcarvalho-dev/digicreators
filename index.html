@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DigiCreator | Venda no TikTok Shop sem aparecer</title>
+<link rel="canonical" href="https://mulherdigitaal.com.br/digicreator/">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#7c25e1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://mulherdigitaal.com.br/digicreator/">
+<meta property="og:title" content="DigiCreator | Venda no TikTok Shop sem aparecer">
+<meta property="og:description" content="Aprenda a gravar e editar vídeos de produto só com as mãos e o celular e venda no TikTok Shop sem aparecer.">
+<meta property="og:image" content="https://mulherdigitaal.com.br/digicreator/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Aprenda a gravar e editar vídeos de produto só com as mãos e o celular e venda no TikTok Shop sem aparecer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: faixas alternadas, claro (lavanda pontilhado) e escuro (preto-roxo com brilho nos cantos),
+   coluna central de 1120px, palavra-chave em pincel, CTA em pilula do roxo do PDF ao roxo do logo com o play do logo */
+:root {
+  --fundo: #faf7fe;
+  --ponto: rgba(124, 37, 225, .13);
+  --papel: #ffffff;
+  --tinta: #1d1324;
+  --cinza: #6b5f73;
+  --linha: #ece2f6;
+  --roxo: #cd3fff;
+  --violeta: #7c25e1;
+  --roxo-escuro: #7b1fa8;
+  --roxo-claro: #f7e8ff;
+  --roxo-noite: #dd8cff;
+  --noite: #0f0a16;
+  --noite-card: #1b1325;
+  --noite-linha: rgba(255, 255, 255, .09);
+  --noite-texto: #cfc3d9;
+  --neon: #45f08f;
+  --neon-escuro: #0d8f4c;
+  --neon-claro: #dcfbe8;
+  --dor: #d81b8c;
+  --dor-claro: #ffe4f4;
+  --dor-noite: #ff6fc0;
+  --gradiente: linear-gradient(120deg, #cd3fff 0%, #7c25e1 100%);
+  --brilho: rgba(150, 40, 235, .45);
+  --f-corpo: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --f-pincel: "Caveat Brush", "Segoe Print", "Comic Sans MS", cursive;
+  --raio: 18px;
+  --gutter-l: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--f-corpo); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+b, strong { font-weight: 700; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--roxo); outline-offset: 3px; border-radius: 6px; }
+
+/* faixas */
+.faixa { padding-block: clamp(64px, 9vw, 112px); position: relative; overflow: hidden; }
+.claro { background-color: var(--fundo); background-image: radial-gradient(var(--ponto) 1.2px, transparent 1.4px); background-size: 22px 22px; }
+.escuro { background: radial-gradient(ellipse 55% 45% at 100% 0%, rgba(124, 37, 225, .28), transparent 70%), var(--noite); color: #fff; }
+.escuro + .escuro { background: var(--noite); }
+.escuro.final { background: radial-gradient(ellipse 55% 60% at 50% 55%, rgba(205, 63, 255, .2), transparent 70%), var(--noite); }
+.miolo { max-width: 1120px; margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); position: relative; }
+.centro { text-align: center; }
+
+/* tipografia */
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--roxo-escuro); }
+.eyebrow::before { content: ""; border-left: 8px solid currentColor; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.escuro .eyebrow { color: var(--roxo-noite); }
+.titulo { font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.15; letter-spacing: -.01em; }
+.titulo-leve { font-weight: 500; }
+.lead { font-size: clamp(1rem, 1.6vw, 1.08rem); color: var(--cinza); max-width: 60ch; }
+.escuro .lead { color: var(--noite-texto); }
+.pincel { font-family: var(--f-pincel); font-weight: 400; font-size: 1.22em; line-height: .9; color: var(--roxo); letter-spacing: .005em; white-space: nowrap; }
+.escuro .pincel { color: var(--roxo-noite); }
+.cab { display: flex; flex-direction: column; gap: 12px; text-align: center; align-items: center; margin-bottom: clamp(32px, 5vw, 52px); }
+.cab .lead { margin-inline: auto; }
+
+/* botao: pilula com o play do logo */
+.cta { display: inline-flex; align-items: center; justify-content: center; gap: 14px; background: var(--gradiente); color: #fff; text-decoration: none;
+  font-weight: 800; font-size: clamp(.9rem, 1.6vw, 1rem); letter-spacing: .03em; text-transform: uppercase; text-align: left;
+  padding: 9px 30px 9px 9px; border-radius: 999px; box-shadow: 0 14px 30px -12px var(--brilho), inset 0 1px 0 rgba(255, 255, 255, .3);
+  transition: transform .2s ease, box-shadow .2s ease; }
+.cta i { width: 42px; height: 42px; border-radius: 50%; background: #fff; color: var(--violeta); display: grid; place-items: center; flex: none; }
+.cta i svg { width: 14px; height: 14px; margin-left: 2px; }
+.cta:hover { transform: translateY(-2px); box-shadow: 0 20px 36px -12px var(--brilho), inset 0 1px 0 rgba(255, 255, 255, .3); }
+.garantias { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .85rem; color: var(--cinza); }
+.escuro .garantias { color: var(--noite-texto); }
+.garantias span { display: inline-flex; align-items: center; gap: 6px; }
+.garantias svg { width: 16px; height: 16px; color: var(--neon-escuro); flex: none; }
+.escuro .garantias svg { color: var(--neon); }
+.centro .garantias { justify-content: center; }
+
+/* ---------- hero ---------- */
+.hero { padding-block: clamp(26px, 4vw, 40px) clamp(64px, 8vw, 104px); }
+.hero .miolo { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.hero-texto { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.logo { display: flex; align-items: center; gap: 10px; margin-bottom: clamp(8px, 3vw, 28px); }
+.logo img { width: 34px; }
+.logo span { font-weight: 800; font-size: 1.25rem; letter-spacing: -.02em; line-height: 1; }
+.logo em { font-style: normal; color: var(--violeta); }
+.hero h1 { display: flex; flex-direction: column; gap: 2px; }
+.hero h1 .l1 { font-size: clamp(1.7rem, 3.6vw, 2.6rem); font-weight: 800; line-height: 1.1; letter-spacing: -.02em; }
+.hero h1 .l2 { font-family: var(--f-pincel); font-weight: 400; font-size: clamp(3.6rem, 8.2vw, 6rem); line-height: .95; white-space: nowrap;
+  background: var(--gradiente); -webkit-background-clip: text; background-clip: text; color: transparent;
+  padding-bottom: .12em; position: relative; width: fit-content; }
+.hero h1 .l2::after { content: ""; position: absolute; left: 3%; right: -2%; bottom: .03em; height: .08em; background: var(--gradiente); border-radius: 999px; transform: rotate(-1.6deg); }
+.hero .sub { font-size: clamp(1rem, 1.6vw, 1.08rem); color: var(--cinza); max-width: 48ch; }
+.hero .sub b { color: var(--tinta); }
+.hero .cta { align-self: flex-start; }
+
+.leque { position: relative; aspect-ratio: 1 / 1.02; max-width: 520px; width: 100%; margin-inline: auto; }
+.leque img { position: absolute; width: 50%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; box-shadow: 0 24px 50px -18px rgba(29, 19, 36, .55); }
+.leque .c2 { left: 25%; top: 2%; z-index: 2; width: 52%; }
+.leque .c1 { left: 0; top: 13%; transform: rotate(-9deg); }
+.leque .c3 { right: 0; top: 13%; transform: rotate(9deg); }
+.chip { position: absolute; z-index: 3; border-radius: 16px; box-shadow: 0 16px 34px -14px rgba(29, 19, 36, .5); }
+.chip-rosto { right: -2%; top: 0; background: var(--papel); display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; }
+.chip-rosto i { width: 38px; height: 38px; border-radius: 12px; background: var(--roxo-claro); color: var(--violeta); display: grid; place-items: center; }
+.chip-rosto i svg { width: 20px; height: 20px; }
+.chip-rosto small { display: block; font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cinza); line-height: 1.3; }
+.chip-rosto strong { display: block; font-size: 1rem; font-weight: 800; line-height: 1.2; }
+.chip-gev { left: -3%; bottom: 4%; background: var(--noite); color: #fff; padding: 10px 18px; font-family: var(--f-pincel); font-size: 1.45rem; line-height: 1; transform: rotate(-4deg); }
+.chip-gev span { color: var(--roxo-noite); }
+
+/* ---------- antes e depois ---------- */
+.antes-depois { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin-inline: auto; align-items: start; }
+.coluna { border-radius: 22px; padding: 28px clamp(20px, 3vw, 32px) 10px; min-width: 0; }
+.coluna.hoje { background: var(--papel); border: 1px solid var(--linha); }
+.coluna.depois { background: var(--noite); color: #fff; box-shadow: 0 30px 50px -30px rgba(124, 37, 225, .55); }
+.coluna h3 { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.15rem; margin-bottom: 10px; }
+.coluna h3 i { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+.coluna h3 i svg { width: 15px; height: 15px; }
+.hoje h3 i { background: var(--dor-claro); color: var(--dor); }
+.depois h3 i { background: rgba(69, 240, 143, .15); color: var(--neon); }
+.coluna li { padding-block: 14px; border-top: 1px solid var(--linha); font-size: .98rem; line-height: 1.5; }
+.hoje li { color: var(--cinza); }
+.hoje li b { color: var(--tinta); }
+.depois li { border-color: var(--noite-linha); color: var(--noite-texto); }
+.depois li b { color: #fff; }
+.acao { margin-top: clamp(36px, 5vw, 48px); display: flex; justify-content: center; }
+
+/* ---------- etapas ---------- */
+.passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.passo { background: var(--noite-card); border: 1px solid var(--noite-linha); border-radius: var(--raio); padding: 28px 26px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.passo .n { font-family: var(--f-pincel); font-size: 3rem; line-height: 1; background: var(--gradiente); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.passo h3 { font-size: 1.3rem; font-weight: 800; }
+.passo p { color: var(--noite-texto); font-size: .95rem; }
+
+/* ---------- travas ---------- */
+.travas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.trava { background: var(--papel); border: 1px solid var(--linha); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.trava small { font-size: .68rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--dor); }
+.trava h3 { font-size: 1.08rem; font-weight: 700; line-height: 1.35; }
+.trava p { color: var(--cinza); font-size: .94rem; border-top: 1px dashed var(--linha); padding-top: 12px; margin-top: 2px; }
+.trava p b { color: var(--violeta); }
+.onde { align-self: flex-start; margin-top: auto; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  background: var(--roxo-claro); color: var(--roxo-escuro); border-radius: 999px; padding: 4px 11px; }
+
+/* ---------- alunas ---------- */
+.provas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.prova { width: 100%; aspect-ratio: 1142 / 1600; object-fit: cover; border-radius: 20px; border: 1px solid var(--linha); background: var(--papel);
+  box-shadow: 0 24px 40px -26px rgba(124, 37, 225, .45); }
+/* carrossel: a lista vai duas vezes no trilho e rola em loop; para com o mouse em cima */
+.carrossel { margin-top: 26px; overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.carrossel .trilho { display: flex; gap: 14px; width: max-content; padding-block: 6px 18px; animation: rolar 100s linear infinite; }
+.carrossel .copia { display: contents; }
+.carrossel:hover .trilho { animation-play-state: paused; }
+.carrossel img { height: 120px; width: auto; max-width: none; flex: none; border-radius: 16px; border: 1px solid var(--linha); background: var(--papel);
+  box-shadow: 0 14px 24px -18px rgba(124, 37, 225, .45); }
+@keyframes rolar { to { transform: translateX(calc(-50% - 7px)); } }
+
+/* ---------- pra quem ---------- */
+.perfis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.perfil { background: var(--noite-card); border: 1px solid var(--noite-linha); border-radius: var(--raio); padding: 22px; display: grid; grid-template-columns: 34px 1fr; gap: 14px; min-width: 0; }
+.perfil i { width: 34px; height: 34px; border-radius: 50%; background: rgba(69, 240, 143, .14); color: var(--neon); display: grid; place-items: center; }
+.perfil i svg { width: 16px; height: 16px; }
+.perfil h3 { font-size: 1.02rem; font-weight: 800; line-height: 1.3; }
+.perfil p { color: var(--noite-texto); font-size: .9rem; margin-top: 3px; }
+
+/* ---------- modulos ---------- */
+.intro-escura { max-width: 720px; margin: 0 auto clamp(56px, 8vw, 88px); text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.intro-escura p { color: var(--noite-texto); font-size: 1.05rem; }
+.intro-escura p b { color: #fff; }
+.modulos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.modulo { background: var(--noite-card); border: 1px solid var(--noite-linha); border-radius: 22px; padding: 12px 12px 24px; display: flex; flex-direction: column; gap: 14px; min-width: 0; transition: transform .25s ease, border-color .25s ease; }
+.modulo:hover { transform: translateY(-4px); border-color: rgba(205, 63, 255, .5); }
+.modulo img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 14px; }.modulo .txt { display: flex; flex-direction: column; gap: 8px; padding-inline: 10px; min-width: 0; }
+.tag { align-self: flex-start; font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; background: var(--gradiente); color: #fff; padding: 5px 12px; border-radius: 999px; }
+.tag.verde { background: var(--neon); color: #08240f; }
+.modulo h3 { font-size: 1.15rem; font-weight: 800; line-height: 1.3; }
+.modulo p { font-size: .92rem; color: var(--noite-texto); }
+
+/* ---------- bonus ---------- */
+.bonus { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bonus-card { background: var(--noite-card); border: 1px solid var(--noite-linha); border-radius: 22px; padding: 26px 24px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.bonus-card .capa-pdf { width: 46%; max-width: 150px; aspect-ratio: 360 / 509; border-radius: 8px; transform: rotate(-4deg); box-shadow: 0 18px 30px -14px rgba(0, 0, 0, .8); margin: 4px 0 6px 6px; }
+.bonus-card .corpo { display: flex; flex-direction: column; gap: 10px; }
+.bonus-card h3 { font-size: 1.18rem; font-weight: 800; line-height: 1.3; }
+.bonus-card p { font-size: .92rem; color: var(--noite-texto); }
+
+/* ---------- oferta em formato de ingresso ---------- */
+.ticket { max-width: 560px; margin-inline: auto; position: relative; filter: drop-shadow(0 30px 34px rgba(124, 37, 225, .22)); }
+.ticket-topo { background: var(--noite); color: #fff; border-radius: 26px 26px 0 0; padding: 34px clamp(22px, 5vw, 40px) 24px; }
+.ticket-topo h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
+.ticket-topo h3 span { font-family: var(--f-pincel); font-weight: 400; font-size: 1.3em; color: var(--roxo-noite); }
+.ticket-topo li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 11px; border-top: 1px solid var(--noite-linha); color: var(--noite-texto); font-size: .95rem; }
+.ticket-topo li b { color: #fff; }
+.ticket-topo li s { flex: none; white-space: nowrap; font-weight: 600; text-decoration-color: var(--dor-noite); text-decoration-thickness: 2px; font-variant-numeric: tabular-nums; }
+.ticket-topo li.total { border-top: 2px solid rgba(255, 255, 255, .3); margin-top: 6px; padding-top: 14px; color: #fff; font-weight: 800; font-size: 1.02rem; }
+.ticket-topo li.total s { font-size: 1.15rem; font-weight: 800; }
+.picote { height: 30px; position: relative;
+  background: radial-gradient(circle at 0 50%, var(--fundo) 14px, transparent 14.5px), radial-gradient(circle at 100% 50%, var(--fundo) 14px, transparent 14.5px), var(--papel); }
+.picote::before { content: ""; position: absolute; left: 26px; right: 26px; top: 50%; border-top: 2px dashed var(--linha); }
+.ticket-base { background: var(--papel); border-radius: 0 0 26px 26px; padding: 6px clamp(22px, 5vw, 40px) 34px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.ticket-base .antes { color: var(--cinza); max-width: 32ch; }
+.ticket-base .antes b { color: var(--tinta); }
+.valor-grande { display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: wrap; line-height: 1; }
+.valor-grande .x { font-size: 1.1rem; font-weight: 600; color: var(--cinza); }
+.valor-grande .rs { font-family: var(--f-pincel); font-size: 2.6rem; color: var(--roxo); }
+.valor-grande .num { font-size: clamp(3.2rem, 9vw, 4.4rem); font-weight: 800; letter-spacing: -.03em; color: var(--violeta); font-variant-numeric: tabular-nums; }
+.avista { color: var(--cinza); font-size: .95rem; }
+.avista b { color: var(--tinta); }
+.adesivo { position: absolute; z-index: 2; top: -30px; right: -20px; width: 112px; height: 112px; border-radius: 50%; background: var(--gradiente); color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transform: rotate(12deg);
+  box-shadow: 0 0 0 5px var(--papel), 0 14px 28px -10px var(--brilho); line-height: 1; }
+.adesivo b { font-family: var(--f-pincel); font-weight: 400; font-size: 3.2rem; line-height: .8; }
+.adesivo span { font-size: .58rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-top: 4px; max-width: 78px; line-height: 1.25; }
+.garantia-bloco { max-width: 560px; margin: 30px auto 0; display: flex; gap: 16px; align-items: flex-start; background: var(--papel); border: 1px solid var(--linha); border-radius: 20px; padding: 22px 24px; }
+.garantia-bloco > svg { width: 32px; height: 32px; color: var(--violeta); flex: none; margin-top: 2px; }
+.garantia-bloco h3 { font-size: 1.25rem; font-weight: 800; line-height: 1.2; }
+.garantia-bloco p { color: var(--cinza); font-size: .95rem; margin-top: 6px; }
+
+/* ---------- quem ensina ---------- */
+.autora { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 60px); align-items: center; }
+.autora figure { margin: 0; border-radius: 24px; overflow: hidden; background: var(--papel); transform: rotate(2deg); box-shadow: 0 30px 50px -30px rgba(0, 0, 0, .8); border: 6px solid var(--papel); }
+.autora figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 40% 60%; border-radius: 18px; }
+.autora .txt { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.autora h2 { font-size: clamp(2rem, 4.4vw, 3rem); font-weight: 800; line-height: 1.05; }
+.autora .frase { font-family: var(--f-pincel); font-size: clamp(1.6rem, 3vw, 2rem); color: var(--roxo-noite); line-height: 1.1; }
+.autora p { color: var(--noite-texto); }
+
+/* ---------- faq ---------- */
+.faq { max-width: 780px; margin-inline: auto; display: flex; flex-direction: column; gap: 10px; }
+details { background: var(--papel); border: 1px solid var(--linha); border-radius: 14px; }
+summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; font-weight: 700; font-size: .98rem; line-height: 1.4; }
+summary::-webkit-details-marker { display: none; }
+summary i { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--roxo-claro); color: var(--violeta); display: grid; place-items: center; font-style: normal; font-weight: 700; transition: background .2s ease, color .2s ease; }
+summary i::before { content: "+"; }
+details[open] summary i { background: var(--gradiente); color: #fff; }
+details[open] summary i::before { content: "\2212"; }
+details p { padding: 0 20px 18px; color: var(--cinza); font-size: .94rem; }
+
+/* ---------- fim ---------- */
+.final .miolo { display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
+.final h2 { display: flex; flex-direction: column; align-items: center; }
+.final h2 .grande { font-family: var(--f-pincel); font-weight: 400; font-size: clamp(3rem, 8vw, 5.6rem); line-height: 1; color: var(--roxo-noite); }
+.final h2 .baixo { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.1; }
+.final p { color: var(--noite-texto); max-width: 46ch; }
+
+footer { background: var(--noite); color: var(--noite-texto); padding-block: 36px; font-size: .82rem; border-top: 1px solid var(--noite-linha); }
+footer .miolo { display: flex; flex-direction: column; gap: 22px; }
+.rodape-topo { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; }
+.avisos { display: flex; flex-direction: column; gap: 10px; font-size: .75rem; line-height: 1.65; color: #9d90a8; border-top: 1px solid var(--noite-linha); padding-top: 20px; }
+.avisos b { color: var(--noite-texto); }
+footer .avisos p { max-width: none; }
+footer .logo { margin: 0; color: #fff; }
+footer .logo img { width: 26px; }
+footer .logo span { font-size: 1.05rem; }
+footer .logo em { color: var(--roxo-noite); }
+footer p { max-width: 60ch; }
+
+/* ---------- responsivo ---------- */
+@media (max-width: 920px) {
+  .hero .miolo, .antes-depois, .autora { grid-template-columns: 1fr; }
+  .leque { max-width: 440px; }
+  .passos, .bonus { grid-template-columns: 1fr; }
+  .travas, .perfis, .modulos, .provas { grid-template-columns: 1fr 1fr; }
+  .autora figure { max-width: 420px; }
+  .bonus-card { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+  .bonus-card .capa-pdf { width: 110px; flex: none; }
+  .bonus-card .corpo { flex: 1; min-width: 200px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .travas, .perfis { grid-template-columns: 1fr; }
+  .modulos { grid-template-columns: 1fr; gap: 14px; }
+  .modulo { flex-direction: row; padding: 10px; gap: 14px; align-items: flex-start; }
+  .modulo img { width: 108px; flex: none; border-radius: 10px; }
+  .modulo .txt { padding: 4px 4px 0 0; flex: 1; }
+  .modulo h3 { font-size: 1.02rem; }
+  .modulo p { font-size: .86rem; }
+  .cta { width: 100%; }
+  .hero .cta { align-self: stretch; }
+  .chip-rosto { right: 0; top: auto; bottom: -2%; }
+  .chip-gev { left: 0; top: -3%; bottom: auto; font-size: 1.25rem; }
+  .bonus-card { padding: 20px 18px; }
+  .bonus-card .capa-pdf { width: 84px; margin: 4px 0 0 2px; }
+  .bonus-card .corpo { min-width: 0; }
+  .adesivo { width: 92px; height: 92px; right: -6px; top: -34px; }
+  .carrossel img { height: 104px; }
+  .adesivo b { font-size: 2.6rem; }
+  .adesivo span { font-size: .5rem; max-width: 64px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .cta, .modulo, summary i { transition: none; }
+  .carrossel { overflow-x: auto; }
+  .carrossel .trilho { animation: none; }
+  .carrossel .copia { display: none; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="escudo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></g></symbol>
+  <symbol id="sem-camera"viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m4 0h3a2 2 0 0 1 2 2v3.3l1 1L22 7v10"/><path d="M2 2l20 20"/></g></symbol>
+</svg>
+
+<!-- ============ ABERTURA ============ -->
+<header class="hero claro">
+  <div class="miolo">
+    <div class="hero-texto">
+      <div class="logo"><img src="img/logo-d.png" alt=""><span>Digi<em>Creator</em></span></div>
+      <span class="eyebrow">Para afiliadas do TikTok Shop</span>
+      <h1>
+        <span class="l1">Venda no TikTok Shop</span>
+        <span class="l2">sem aparecer</span>
+      </h1>
+      <p class="sub">Com o <b>método faceless</b>, você vai aprender a gravar e editar vídeos do produto pelo próprio celular, e aumentar suas comissões. Sem estoque e sem equipamento caro.</p>
+      <a class="cta" href="#oferta"><i><svg aria-hidden="true"><use href="#play"/></svg></i>Quero vender sem aparecer</a>
+      <div class="garantias">
+        <span><svg aria-hidden="true"><use href="#ok"/></svg>Acesso imediato</span>
+        <span><svg aria-hidden="true"><use href="#ok"/></svg>7 dias de garantia</span>
+        <span><svg aria-hidden="true"><use href="#ok"/></svg>Aulas pelo celular</span>
+      </div>
+    </div>
+    <div class="leque" aria-label="Capas dos módulos de gravação">
+      <img class="c1" src="img/m3.webp" srcset="img/m3-360.webp 360w, img/m3.webp 640w" sizes="(max-width: 920px) 50vw, 280px" alt="Módulo 3: Gravando perfumaria">
+      <img class="c3" src="img/m4.webp" srcset="img/m4-360.webp 360w, img/m4.webp 640w" sizes="(max-width: 920px) 50vw, 280px" alt="Módulo 4: Gravando acessórios">
+      <img class="c2" src="img/m2.webp" srcset="img/m2-360.webp 360w, img/m2.webp 640w" sizes="(max-width: 920px) 50vw, 280px" fetchpriority="high" alt="Módulo 2: Gravando skincare">
+      <div class="chip chip-rosto"><i><svg aria-hidden="true"><use href="#sem-camera"/></svg></i><div><small>Rosto na câmera</small><strong>Nenhum</strong></div></div>
+      <div class="chip chip-gev">grave · edite · <span>venda!</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ANTES E DEPOIS ============ -->
+<section class="faixa claro" style="padding-top: 24px">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Antes e depois</span>
+      <h2 class="titulo">Do vídeo que <span class="pincel">trava</span> ao vídeo que vende</h2>
+    </div>
+    <div class="antes-depois">
+      <div class="coluna hoje">
+        <h3><i><svg aria-hidden="true"><use href="#x"/></svg></i>Hoje</h3>
+        <ul>
+          <li>Você tem <b>vergonha de aparecer</b> e falar pra câmera</li>
+          <li>Não sabe <b>gravar o produto</b> de um jeito que dê vontade de comprar</li>
+          <li>Acha que precisa de <b>equipamento caro</b> pra começar</li>
+          <li>Não tem <b>produto em casa</b> pra gravar e não quer comprar</li>
+          <li><b>Trava na edição</b> e o vídeo nunca fica pronto</li>
+          <li>Posta, posta, e <b>o vídeo não vende</b></li>
+        </ul>
+      </div>
+      <div class="coluna depois">
+        <h3><i><svg aria-hidden="true"><use href="#ok"/></svg></i>Com o DigiCreator</h3>
+        <ul>
+          <li><b>Vende sem mostrar o rosto</b>, só com as mãos e o produto</li>
+          <li>Sabe a <b>luz e o ângulo</b> que valorizam cada tipo de produto</li>
+          <li>Grava com <b>o celular que já tem</b> e um suporte simples</li>
+          <li><b>Recebe produtos de graça</b> das marcas pra gravar</li>
+          <li><b>Edita no celular</b> e grava vários vídeos numa tarde só</li>
+          <li>Sabe <b>o que falar nos primeiros segundos</b> pra prender quem assiste</li>
+        </ul>
+      </div>
+    </div>
+    <div class="acao"><a class="cta" href="#oferta"><i><svg aria-hidden="true"><use href="#play"/></svg></i>Quero esse depois</a></div>
+  </div>
+</section>
+
+<!-- ============ ETAPAS ============ -->
+<section class="faixa escuro">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Como funciona</span>
+      <h2 class="titulo">Três etapas e <span class="pincel">nenhuma</span> mostra o seu rosto</h2>
+    </div>
+    <div class="passos">
+      <div class="passo"><span class="n">1</span><h3>Grave</h3>
+        <p>Luz, ângulo, cenário, e enquadramento pra mostrar o produto só com as mãos, usando o celular e um suporte simples.</p></div>
+      <div class="passo"><span class="n">2</span><h3>Edite</h3>
+        <p>Corte, texto, narração, música, efeitos sonoros, e headlines no próprio celular, num ritmo que segura a atenção até o fim.</p></div>
+      <div class="passo"><span class="n">3</span><h3>Venda</h3>
+        <p>Um gancho forte nos primeiros segundos e o produto linkado no vídeo. Cada venda vira comissão pra você.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAVAS ============ -->
+<section class="faixa claro">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Onde o curso entra</span>
+      <h2 class="titulo">Cada trava tem a sua <span class="pincel">resposta</span></h2>
+    </div>
+    <div class="travas">
+      <div class="trava"><small>Travou em</small><h3>Não quer aparecer nos vídeos</h3>
+        <p>Os ângulos e enquadramentos que vendem <b>só com as mãos e o produto</b>, sem rosto e sem dancinha.</p><span class="onde">Módulos 1 a 4</span></div>
+      <div class="trava"><small>Travou em</small><h3>Não sabe por onde começar a gravar</h3>
+        <p>Os <b>passos iniciais</b>: o celular, a luz, o suporte e a posição do produto pro primeiro vídeo.</p><span class="onde">Módulo 1</span></div>
+      <div class="trava"><small>Travou em</small><h3>Trava na hora de editar</h3>
+        <p>Como <b>editar no celular</b>: corte, texto, música e efeitos, do bruto ao vídeo pronto pra postar.</p><span class="onde">Módulos 5 a 7</span></div>
+      <div class="trava"><small>Travou em</small><h3>Não tem produtos pra gravar</h3>
+        <p>As <b>87 marcas que aprovam amostra grátis</b>, com o que cada uma vende, pra receber produto em casa.</p><span class="onde">Bônus</span></div>
+      <div class="trava"><small>Travou em</small><h3>Não sabe o que falar no começo do vídeo</h3>
+        <p><b>50 ganchos validados</b> pros primeiros segundos, separados por categoria e prontos pra adaptar.</p><span class="onde">Bônus</span></div>
+      <div class="trava"><small>Travou em</small><h3>Não sabe quais marcas pagam bem</h3>
+        <p><b>89 marcas com comissões boas</b> e a dica de vídeo de cada categoria.</p><span class="onde">Bônus</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTADOS ============ -->
+<section class="faixa claro" style="padding-top: 0">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Alunas</span>
+      <h2 class="titulo titulo-leve">Resultados com vídeos <span class="pincel">faceless</span></h2>
+    </div>
+    <div class="provas">
+      <img class="prova" src="img/resultado-1.webp" alt="Vídeo faceless de gloss labial com R$ 232,61 em vendas atribuídas e 10 itens vendidos" loading="lazy">
+      <img class="prova" src="img/resultado-2.webp" alt="Vídeo faceless de kit de cintos com R$ 700,78 em vendas atribuídas e 48 itens vendidos" loading="lazy">
+      <img class="prova" src="img/resultado-3.webp" alt="Vídeo faceless de bolsa transversal com R$ 387,24 em vendas atribuídas e 16 itens vendidos" loading="lazy">
+      <img class="prova" src="img/resultado-4.webp" alt="Vídeo faceless de kit de prateleiras com R$ 3,1 mil em vendas atribuídas e 58 itens vendidos" loading="lazy">
+    </div>
+    <div class="carrossel" aria-label="Mais vendas com vídeos faceless">
+      <div class="trilho">
+        <img src="img/venda-01.webp" width="1242" height="240" alt="Óleo e Sérum Bifásico Dove: R$ 658,25 em vendas e 29 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-02.webp" width="752" height="240" alt="Protetor solar Selunia: R$ 397,12 em vendas e 10 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-03.webp" width="903" height="240" alt="Kit de prateleiras MDF: R$ 4 mil em vendas e 64 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-04.webp" width="823" height="240" alt="Óleo de banho Dove: R$ 321,78 em vendas e 19 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-05.webp" width="1074" height="240" alt="Eletrólitos HOW: R$ 309,95 em vendas e 6 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-06.webp" width="1069" height="240" alt="Kit de prateleiras MDF: R$ 289,94 em vendas e 6 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-07.webp" width="1249" height="240" alt="Kit 2 body splash: R$ 113 em vendas e 3 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-08.webp" width="849" height="240" alt="Kit 3 cintos femininos: R$ 700,78 em vendas e 48 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-09.webp" width="1037" height="240" alt="Kit de prateleiras MDF: R$ 1,4 mil em vendas e 21 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-10.webp" width="1056" height="240" alt="Bolsa transversal feminina: R$ 398,26 em vendas e 16 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-11.webp" width="1010" height="240" alt="Kit Eudora Siàge: R$ 179,40 em vendas e 1 item" fetchpriority="low" decoding="async">
+        <img src="img/venda-12.webp" width="868" height="240" alt="Óleo de banho Dove: R$ 321,78 em vendas e 19 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-13.webp" width="960" height="240" alt="Gloss labial Pam By Pamella: R$ 232,61 em vendas e 10 itens" fetchpriority="low" decoding="async">
+        <img src="img/venda-14.webp" width="982" height="240" alt="Bastão antioleosidade Sallve: R$ 110,68 em vendas e 2 itens" fetchpriority="low" decoding="async">
+        <span class="copia" aria-hidden="true">
+          <img src="img/venda-01.webp" width="1242" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-02.webp" width="752" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-03.webp" width="903" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-04.webp" width="823" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-05.webp" width="1074" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-06.webp" width="1069" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-07.webp" width="1249" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-08.webp" width="849" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-09.webp" width="1037" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-10.webp" width="1056" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-11.webp" width="1010" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-12.webp" width="868" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-13.webp" width="960" height="240" alt="" fetchpriority="low" decoding="async">
+          <img src="img/venda-14.webp" width="982" height="240" alt="" fetchpriority="low" decoding="async">
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRA QUEM ============ -->
+<section class="faixa escuro">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Pra quem é</span>
+      <h2 class="titulo">Feito pra quem quer vender <span class="pincel">longe do holofote</span></h2>
+    </div>
+    <div class="perfis">
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Tem vergonha da câmera</h3><p>e quer vender sem mostrar o rosto.</p></div></div>
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Tem pouco tempo livre</h3><p>e precisa de algo que caiba nos intervalos do dia.</p></div></div>
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Quer uma renda extra</h3><p>sem largar o que já faz hoje.</p></div></div>
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Já posta no TikTok</h3><p>mas os vídeos ainda não viram venda.</p></div></div>
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Nunca vendeu pela internet</h3><p>e quer começar com um passo a passo.</p></div></div>
+      <div class="perfil"><i><svg aria-hidden="true"><use href="#ok"/></svg></i><div><h3>Não quer ter estoque</h3><p>e prefere ganhar comissão vendendo produtos de outras lojas.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODULOS ============ -->
+<section class="faixa escuro" id="modulos" style="padding-top: 24px">
+  <div class="miolo">
+    <div class="intro-escura">
+      <h2 class="titulo">Quem precisa aparecer é <span class="pincel">o produto</span></h2>
+      <p>Pra vender como afiliada você não precisa virar influenciadora. <b>Precisa de um vídeo que mostre bem o produto</b>, e é isso que o curso ensina, categoria por categoria.</p>
+    </div>
+    <div class="cab">
+      <span class="eyebrow">Dentro do curso</span>
+      <h2 class="titulo">8 módulos + <span class="pincel">bônus</span></h2>
+    </div>
+    <div class="modulos">
+      <article class="modulo">
+        <img src="img/m1.webp" srcset="img/m1-360.webp 360w, img/m1.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo 1: Passos iniciais para começar a gravar vídeos" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 01</span><h3>Passos iniciais para começar a gravar vídeos</h3>
+          <p>O que você precisa no celular, como montar luz e suporte e como posicionar o produto pro seu primeiro vídeo.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m2.webp" srcset="img/m2-360.webp 360w, img/m2.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo 2: Gravando skincare" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 02</span><h3>Gravando skincare</h3>
+          <p>Como mostrar textura, aplicação e embalagem de sérum, creme e hidratante usando só as mãos.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m3.webp" srcset="img/m3-360.webp 360w, img/m3.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo 3: Gravando perfumaria" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 03</span><h3>Gravando perfumaria</h3>
+          <p>Como fazer o frasco brilhar na câmera e despertar vontade num produto que ninguém pode cheirar pela tela.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m4.webp" srcset="img/m4-360.webp 360w, img/m4.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo 4: Gravando acessórios" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 04</span><h3>Gravando acessórios</h3>
+          <p>Bolsas, escovas, e outros: a luz e os ângulos que mostram o detalhe do produto.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m5.webp" srcset="img/m5-360.webp 360w, img/m5.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo 5: Como editar seus vídeos" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 05</span><h3>Como editar seus vídeos</h3>
+          <p>Como cortar seu vídeo para que ele prenda a pessoa até o final.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m5.webp" srcset="img/m5-360.webp 360w, img/m5.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa de Como editar seus vídeos" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 06</span><h3>Como editar seus vídeos</h3>
+          <p>Como adicionar headlines chamativas para aumentar suas comissões.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m5.webp" srcset="img/m5-360.webp 360w, img/m5.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa de Como editar seus vídeos" loading="lazy">
+        <div class="txt"><span class="tag">Módulo 07</span><h3>Como editar seus vídeos</h3>
+          <p>Como aplicar efeitos sonoros que despertam interesse.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/m8.webp" srcset="img/m8-360.webp 360w, img/m8.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa de Como gravar com rosto" loading="lazy">
+        <div class="txt"><span class="tag verde">Módulo 08 · bônus</span><h3>Gravando com rosto</h3>
+          <p>Mais conteúdo pra acelerar seus resultados, para quem tem interesse em gravar mostrando o rosto mas não sabe prender atenção nos vídeos.</p></div>
+      </article>
+      <article class="modulo">
+        <img src="img/bonus.webp" srcset="img/bonus-360.webp 360w, img/bonus.webp 640w" sizes="(max-width: 640px) 108px, (max-width: 920px) 45vw, 340px" alt="Capa do Módulo Bônus" loading="lazy">
+        <div class="txt"><span class="tag verde">Módulo 09 · bônus</span><h3>Conteúdo extra e estratégias</h3>
+          <p>Mais conteúdo pra acelerar seus resultados, junto com os três PDFs que você vê logo abaixo.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUS ============ -->
+<section class="faixa escuro" style="padding-top: 24px">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Bônus inclusos</span>
+      <h2 class="titulo">Três PDFs pra ter <span class="pincel">sempre à mão</span></h2>
+      <p class="lead">Pra abrir na hora de escolher a marca, pedir amostra ou começar um vídeo.</p>
+    </div>
+    <div class="bonus">
+      <article class="bonus-card">
+        <img class="capa-pdf" src="img/pdf-ganchos.webp" alt="Capa do PDF 50 ganchos validados" loading="lazy">
+        <div class="corpo"><span class="tag verde">Bônus 1</span><h3>50 ganchos validados</h3>
+          <p>As frases pros primeiros segundos do vídeo, separadas por categoria, com variação e dica de como usar cada uma.</p></div>
+      </article>
+      <article class="bonus-card">
+        <img class="capa-pdf" src="img/pdf-amostras.webp" alt="Capa do PDF Marcas que aprovam amostra grátis" loading="lazy">
+        <div class="corpo"><span class="tag verde">Bônus 2</span><h3>Marcas que aprovam amostra grátis</h3>
+          <p>87 marcas do TikTok Shop em 11 categorias, com o que cada uma vende, pra você receber produto em casa e gravar sem gastar.</p></div>
+      </article>
+      <article class="bonus-card">
+        <img class="capa-pdf" src="img/pdf-comissoes.webp" alt="Capa do PDF Marcas com comissões boas" loading="lazy">
+        <div class="corpo"><span class="tag verde">Bônus 3</span><h3>Marcas com comissões boas</h3>
+          <p>89 marcas em 11 categorias, com a dica de vídeo e os ganchos que combinam com cada uma.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="faixa claro" id="oferta">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Inscrição</span>
+      <h2 class="titulo">Ganhar dinheiro no TikTok é <span class="pincel">muito mais fácil</span> do que você imagina</h2>
+    </div>
+    <div class="ticket">
+      <div class="adesivo"><b>7</b><span>dias de garantia</span></div>
+      <div class="ticket-topo">
+        <h3>Garanta agora sua vaga no <span>DigiCreator</span></h3>
+        <ul>
+          <li><span><b>DigiCreator:</b> curso completo com 9 módulos</span><s>R$ 997</s></li>
+          <li><span><b>Bônus:</b> Como gravar com rosto</span><s>R$ 297</s></li>
+          <li><span><b>Bônus:</b> 50 ganchos e headlines</span><s>R$ 197</s></li>
+          <li><span><b>Bônus:</b> Marcas que aprovam amostra grátis</span><s>R$ 97</s></li>
+          <li><span><b>Bônus:</b> Marcas com boas comissões</span><s>R$ 97</s></li>
+          <li class="total"><span>Valor total</span><s>R$ 1.685</s></li>
+        </ul>
+      </div>
+      <div class="picote"></div>
+      <div class="ticket-base">
+        <p class="antes">Mas para ter acesso a tudo isso, <b>o seu investimento será apenas:</b></p>
+        <div class="valor-grande"><span class="x">12x de</span><span class="rs">R$</span><span class="num">20,35</span></div>
+        <p class="avista">ou <b>R$ 197 à vista</b> no Pix</p>
+        <a class="cta" href="https://pay.cakto.com.br/g26e9cr_1207365"><i><svg aria-hidden="true"><use href="#play"/></svg></i>Quero minha vaga</a>
+        <div class="garantias">
+          <span><svg aria-hidden="true"><use href="#ok"/></svg>Pagamento seguro</span>
+          <span><svg aria-hidden="true"><use href="#ok"/></svg>Acesso imediato</span>
+        </div>
+      </div>
+    </div>
+    <div class="garantia-bloco"><svg aria-hidden="true"><use href="#escudo"/></svg>
+      <div><h3>É <span class="pincel">risco zero</span> para você</h3>
+        <p>7 dias de garantia para você entrar, experimentar e tirar suas próprias conclusões. Se não gostar, é só pedir o seu dinheiro de volta.</p></div></div>
+  </div>
+</section>
+
+<!-- ============ QUEM ENSINA ============ -->
+<section class="faixa escuro">
+  <div class="miolo autora">
+    <div class="txt">
+      <span class="eyebrow">Quem ensina</span>
+      <h2>Laís Rodrigues</h2>
+      <p class="frase">Criadora do DigiCreator</p>
+      <p>Empreendedora com marca própria, e creator no TikTok Shop.</p>
+      <p>Na prática, descobriu como transformar vídeos de produtos em oportunidades de vendas e comissões, utilizando estratégias de gravação, edição e conteúdo que despertam o interesse do comprador.</p>
+      <p>De forma simplificada, criou essa comunidade para mostrar que não precisa de equipamentos caros, milhares de seguidores ou aparecer na frente das câmeras para conseguir vender no TikTok Shop, e com isso, mostrar o caminho para você sair da teoria e começar a colocar tudo em prática!</p>
+    </div>
+    <figure><img src="img/lais.webp" alt="Foto de Laís Rodrigues, criadora do DigiCreator" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ============ PERGUNTAS ============ -->
+<section class="faixa claro">
+  <div class="miolo">
+    <div class="cab">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2 class="titulo titulo-leve">Antes de <span class="pincel">entrar</span></h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Preciso aparecer nos vídeos?<i aria-hidden="true"></i></summary>
+        <p>Não. O método todo é pensado pra gravar só com as mãos e o produto, sem mostrar o rosto.</p></details>
+      <details><summary>Preciso de equipamento caro?<i aria-hidden="true"></i></summary>
+        <p>Não. Você grava com o seu celular. No módulo 1 você vê o básico de luz e suporte pra começar com o que tem em casa.</p></details>
+      <details><summary>Preciso comprar produtos ou ter estoque?<i aria-hidden="true"></i></summary>
+        <p>Não. Você pode começar com os produtos que tem em casa, você divulga produtos de outras lojas ou seu próprio produto e ganha comissão pelas vendas. Com o bônus de amostra grátis, você também aprende a receber produtos em casa pra gravar.</p></details>
+      <details><summary>Funciona pra quem está começando do zero?<i aria-hidden="true"></i></summary>
+        <p>Sim. O curso começa nos passos iniciais, antes mesmo do primeiro vídeo.</p></details>
+      <details><summary>As aulas são gravadas ou ao vivo?<i aria-hidden="true"></i></summary>
+        <p>Gravadas, pra você assistir no seu tempo, pelo celular ou pelo computador.</p></details>
+      <details><summary>Como recebo o acesso?<i aria-hidden="true"></i></summary>
+        <p>Assim que o pagamento é confirmado, o acesso chega no seu e-mail.</p></details>
+      <details><summary>Por quanto tempo terei acesso?<i aria-hidden="true"></i></summary>
+        <p>Acesso vitalício às aulas enquanto o curso estiver disponível, com suporte por 12 meses.</p></details>
+      <details><summary>Como funciona o suporte?<i aria-hidden="true"></i></summary>
+        <p>Durante 12 meses, você tira suas dúvidas pelo Telegram.</p></details>
+      <details><summary>Quais as formas de pagamento?<i aria-hidden="true"></i></summary>
+        <p>Cartão de crédito em até 12x, Pix, Apple Pay, PicPay ou Google Pay.</p></details>
+      <details><summary>E se eu não gostar?<i aria-hidden="true"></i></summary>
+        <p>Você tem 7 dias de garantia. É só pedir o reembolso dentro desse prazo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIM ============ -->
+<section class="faixa escuro final">
+  <div class="miolo">
+    <h2><span class="grande">seu primeiro vídeo</span><span class="baixo">começa hoje.</span></h2>
+    <p>Separe um produto, apoie o celular e comece pelo módulo 1. O resto você aprende no caminho.</p>
+    <a class="cta" href="https://pay.cakto.com.br/g26e9cr_1207365"><i><svg aria-hidden="true"><use href="#play"/></svg></i>Quero vender sem aparecer</a>
+  </div>
+</section>
+
+<footer>
+  <div class="miolo">
+    <div class="rodape-topo">
+      <div class="logo"><img src="img/logo-d-branco.png" alt=""><span>Digi<em>Creator</em></span></div>
+      <p>Copyright © DigiCreator 2026</p>
+    </div>
+    <div class="avisos">
+      <p><b>ESTE SITE NÃO É DO TIKTOK:</b> Este site não faz parte do TikTok nem do TikTok Shop e não tem nenhum vínculo com o TikTok ou com a ByteDance. Além disso, este site NÃO é endossado pelo TikTok ou pela ByteDance de nenhuma maneira. TikTok e TikTok Shop são marcas de seus respectivos donos.</p>
+      <p><b>ESTE SITE NÃO É DA META:</b> Este site não faz parte do site do Facebook, Instagram ou da Meta Platforms, Inc. Além disso, este site NÃO é endossado pela Meta Platforms, Inc. de nenhuma maneira. Facebook, Instagram e WhatsApp são marcas comerciais independentes da Meta Platforms, Inc.</p>
+      <p>O DigiCreator é um curso com o objetivo de ajudar pessoas a obterem resultados utilizando o poder da internet. Não reivindicamos ou declaramos que ao usar o método, você ganhará dinheiro ou recuperará seu dinheiro. Os depoimentos mostrados são negócios e vão variar com base no seu esforço, no conhecimento que você adquirir e nas forças do mercado que estão além do controle de qualquer pessoa.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
